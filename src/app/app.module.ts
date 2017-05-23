@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {InputTextModule} from 'primeng/primeng';
+import { Angular2FontAwesomeModule } from 'angular2-font-awesome/angular2-font-awesome';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +15,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    InputTextModule,
+    HttpModule,
+    Angular2FontAwesomeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,9 @@
     "version": "1.0.0-beta.28.3",
     "name": "emotions"
   },
+  "addons": [
+    "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"
+  ],
   "apps": [
     {
       "root": "src",
@@ -18,10 +21,11 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [],
-      "environments": {
+     "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
@@ -64,4 +68,5 @@
       "service": true
     }
   }
+
 }
