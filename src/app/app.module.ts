@@ -8,9 +8,14 @@ import {InputTextModule} from 'primeng/primeng';
 import { Angular2FontAwesomeModule } from 'angular2-font-awesome/angular2-font-awesome';
 
 
+import {InputTextModule} from 'primeng/primeng';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
+
   ],
   imports: [
     BrowserModule,
@@ -18,7 +23,6 @@ import { Angular2FontAwesomeModule } from 'angular2-font-awesome/angular2-font-a
     InputTextModule,
     HttpModule,
     Angular2FontAwesomeModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
