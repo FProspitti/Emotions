@@ -8,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  isLogged:boolean;
+  constructor() {
+    this.isLogged = false;
+  }
 
   ngOnInit() {
   }
 
+  login(username, password){
+    if(username.value =="test" && password.value=="test"){
+      this.isLogged = true;
+      console.warn("fede");
+      alert("fede");
+    }
+  }
 }
